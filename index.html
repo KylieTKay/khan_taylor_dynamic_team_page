@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>All about objects</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Grid Framwork Scaffold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <h2 class="hidden">contact page</h2>
+    <div class="container">
+    <!-- header -->
+    <header>
+        <section class="headerCon grid-con">
+            <h2 class="hidden">"main header"</h2>
+            <a href="index.html" id="logo" class="boxIcon col-start-2 col-end-4 m-col-start-1 m-col-end-3">LOGO</a>
+            <button class="boxIcon col-start-4 col-end-9" id="hamburger">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+           <nav class="mainNav col-span-full
+            m-col-span-5 m-col-end-13" id="burger-con">
+                <menu id="burger-menu">
+                    <li><a class="boxButton" href="contact.html">contact</a></li>
+                    <li><a class="boxButton" href="*">menu2</a></li>
+                    <li><a class="boxButton" href="*">menu3</a></li>
+                    <li><a class="boxButton" href="*">menu4</a></li>
+                    <li><a class="boxButton" href="*">menu5</a></li>
+                </menu>
+            </nav>
+        </section>
+    </header>
     <main>
+        <!-- Hero -->
+        <section class="grid-con">
+            <h2 class="hidden">"Hero"</h2>
+            <div class="mainHero boxImgCon col-span-full m-col-start-1 m-col-end-8" id="partner1Hero">
+                <ul>
+            
+                </ul>                   
+            </div>
+            <div class="heroOverlay col-span-full m-col-start-9 m-col-end-12 heroText">
+                <h3>Team Lead</h3>
+                <h2>Taylor 
+                    <br> Khan</h2>
+                <h3>Job Title</h4>
+                <button data-member="taylor"><p>Learn More</p></button>
+            </div>
+            <!-- <button class=" col-span-full m-col-start-10 m-col-end-12" data-member="taylor"><p>Learn More</p></button> -->
+
+        </section>
+        <section class="grid-con">
+            <h2 class="hidden">"Hero"</h2>
+            <div class="mainHero boxImgCon col-span-full m-col-start-6 m-col-end-12" id="partner2Hero">
+                <ul>
+            
+                </ul>                   
+            </div>
+            <div class="heroOverlay col-span-full m-col-start-2 m-col-end-5 heroText">
+                <h3>Support</h3>
+                <h2>Millie-Ann
+                    <br>
+                    Bean
+                </h2>
+                <h3>Job Title</h4>
+                <button data-prof="marco">Get Marco's info</button>
+
+            </div>
+            <!-- <button class=" col-span-full m-col-start-2 m-col-end-4" data-prof="marco">Get Marco's info</button> -->
+
+        </section>
         <h1>Working with Objects</h1>
 
-        <button data-prof="marco">Get Marco's info</button>
         <button data-prof="trevor">Get Trevor's info</button>
         <button data-prof="jarrod">Get Jarrod's info</button>
 
 
-        <ul>
-            
-        </ul>
+
     </main>
 
     <script src="js/main.js"></script>
+    </div>
 </body>
 </html>

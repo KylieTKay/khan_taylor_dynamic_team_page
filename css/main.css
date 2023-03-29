@@ -3,3 +3,258 @@
     text-transform: uppercase;
     color: white;
 } */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+}
+    
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+p, input, a, textarea, label {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input, textarea, button {
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+i { color: inherit;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* p { font-size: 35px;} */
+
+/* header */
+
+.headerCon {height: 120px; }
+
+.mainNav {
+    margin: 35px 0 25px 0px;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+}
+
+
+#hamburger {display: none;}
+
+
+menu {
+    list-style-type: none;
+    display: inline-flex;
+    padding-inline-start: 0;
+}
+
+menu li { margin-right: 30px;}
+
+
+/* Main */
+
+/* *Hero* */
+
+.heroText { grid-row: 1/1;}
+
+.heroText h2 {
+font-size: 70px;
+}
+.heroText h3 {
+font-size: 30px;
+}
+.mainHero { 
+    height: 825px; 
+    margin-top: -120px;
+}
+
+.mainHero#partner1Hero {
+    margin-top: 0 !important;
+    height: 612px !important;
+    margin-left: -15px;
+    border-radius: 0 50em 50em 0;
+    grid-row: 1/1;
+}
+
+
+.mainHero#partner2Hero {
+    margin-top: 0 !important;
+    margin-right: -30px;
+    width: 600px;
+    height: 600px !important;
+    grid-row: 1/1;
+    border-radius: 50em;
+}
+
+.heroOverlay {
+    padding-top: 190px;
+    padding-bottom: 310px;
+}
+
+.heroOverlay h1, .heroOverlay p { 
+    text-align: center;
+}
+
+
+
+/* footer */
+
+#footerCon{
+    padding: 285px 0 0 0;
+}
+#subCon {
+    margin-bottom: 200px;
+}
+
+#subCon p {
+    margin: 25px 0;
+}
+
+
+#subCon form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#subCon form input {
+    border-radius: 3rem 0 0 3rem;
+    margin: 0;
+}
+#subCon form button {
+    border-radius: 0 3rem 3rem 0;
+    padding: 19px 20px;
+    margin: 0;
+}
+
+#copyrights {margin-top: 30px;}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    margin:30px 70px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        /* font-size: 30px; */
+    }
+    h2 {
+        /* font-size: 20px; */
+    }
+    
+    h3 {
+        /* font-size: 17px; */
+    }
+    
+    input, textarea, button {
+        /* font-size: 15px; */
+    }
+
+    
+    /* p { font-size: 15px;} */
+
+
+/* header */
+    .headerCon {
+        height: fit-content;
+    }
+
+    #logo {height: 20vh;}
+
+    #hamburger {
+        display: block;
+        transition: all .5s ease;
+        border: none;  
+        height: fit-content;
+        width: fit-content;
+        margin: auto 0;
+    }
+
+
+
+     #hamburger.expanded {
+        transform: rotate(90deg);
+     }
+     
+     #burger-con {
+        display: none;
+     }
+     
+     #burger-con.slide-toggle {
+        display: grid;
+    }
+
+     menu {
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: stretch;        
+    }
+    
+    menu li {
+        padding-bottom: 5px; 
+        display: grid;
+        margin-left: 0;
+        justify-content: stretch;
+    }
+/* hero */
+
+.heroOverlay { padding: 250px 0;}
+
+.mainHero#partner1Hero {
+    height: 50vh !important;
+}
+
+
+/* footer */
+
+#footerCon{
+    padding: 30vh 0 0 0;
+}
+#subCon {
+    margin-bottom:20vh;
+}
+#subCon form{
+    display: grid;
+    justify-content: center;
+}
+
+#subCon form input {
+    width: 75vw;
+    grid-row: 1/1
+}
+#subCon form button {
+    width: 20vw;
+    grid-row: 1/1
+}
+
+
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+}
