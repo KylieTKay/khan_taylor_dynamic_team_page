@@ -49,40 +49,49 @@ theList = document.querySelector('ul');
 //     }
 // }
 
-let profs = {
-    marco: {
-        name: 'Marco',
-        role: 'Coordinator',
-        nickname: 'marco',
-        bio: 'something interesting about Marco',
-        avatar: 'marco.jpg'
+let team = {
+        taylor: {
+            name: "Taylor Khan",
+            headline: "just a sad bitch having a fucking melt-down",
+            bio: "wish i were joking literally trying not to cry rn cus my family will just think im dramatic.",
+            avatar: "Taylor.jpg",
         },
-    trevor: {
-        name: 'Trevor',
-        role: 'Coordinator',
-        nickname: 'trevor',
-        bio: 'something interesting about Trevor',
-        avatar: 'trevor.jpg'
-        },
-    jarrod: {
-        name: 'Jarrod',
-        role: 'Coordinator',
-        nickname: 'jarrod',
-        bio: 'something interesting about Jarrod',
-        avatar: 'jarrod.jpg'
-        },
-    }
-            
-function listProf () {
+    
+        idfk: {
+            name: "i dont fucking know",
+            headline: "no one",
+            bio: "to be honest everyone already found someone before i could ask, no one was interested.",
+            avatar: "blank-icon.jpg",
+        }
+    }           
+function listMember () {
     // if (theList.children.length > 0) {
         theList.innerHTML = "";
     //     return;
     // }
 
-    for (item in profs[this.dataset.prof]) {
+    for (item in team[this.dataset.member]) {
         let newItem = document.createElement ('li');
-        newItem.textContent = profs[this.dataset.prof][item];
+        newItem.textContent = team[this.dataset.member][item];
         theList.appendChild(newItem);
     }
 }
-theButtons.forEach(prof => prof.addEventListener('click', listProf));
+
+(function(){
+	"use strict";
+	
+	console.log("fired");
+
+	let button = document.querySelector("#hamburger");
+	let burgerCon = document.querySelector("#burger-con");
+
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slide-toggle");
+		button.classList.toggle("expanded");
+	};
+
+	button.addEventListener("click", hamburgerMenu, false);
+		
+})();
+
+theButtons.forEach(member => member.addEventListener('click', listMember));
