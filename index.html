@@ -37,26 +37,43 @@
     <main>
         <!-- Hero -->
         <section class="grid-con">
-            <h2 class="hidden">"Hero"</h2>
-            <div class="mainHero boxImgCon col-span-full m-col-start-1 m-col-end-8" id="partner1Hero">
-                <ul>
-            
-                </ul>                   
-            </div>
-            <div class="heroOverlay col-span-full m-col-start-9 m-col-end-12 heroText">
+            <h2 class="hidden">"Hero"</h2> 
+            <div class="mobileHeroText ">
                 <h3>Team Lead</h3>
                 <h2>Taylor 
                     <br> Khan</h2>
                 <h3>Job Title</h4>
-                <button data-member="taylor"><p>Learn More</p></button>
+                <button class="boxButton taylorInfo" data-member="taylor"><p>Learn More</p></button>
+                </div>
+            <div class="mainHero col-span-full" id="partner1Hero">
+
+            </div>
+            <div class="heroOverlay m-col-start-9 m-col-end-12 heroText">
+                <h3>Team Lead</h3>
+                <h2>Taylor 
+                    <br> Khan</h2>
+                <h3>Job Title</h4>
+                <button class="boxButton taylorInfo" data-member="taylor"><p>Learn More</p></button>               
+                <ul id="taylorList">
+                </ul>                   
             </div>
             <!-- <button class=" col-span-full m-col-start-10 m-col-end-12" data-member="taylor"><p>Learn More</p></button> -->
 
         </section>
         <section class="grid-con">
             <h2 class="hidden">"Hero"</h2>
-            <div class="mainHero boxImgCon col-span-full m-col-start-6 m-col-end-12" id="partner2Hero">
-                <ul>
+            <div class="mainHero boxImgCon col-span-full" id="partner2Hero">
+                <div class="mobileHeroText">
+                    <h3>Support</h3>
+                    <h2>Millie-Ann
+                        <br>
+                        Bean
+                    </h2>
+                    <h3>Job Title</h4>
+                    <button class="boxButton doggoInfo" data-member="doggo">Learn More</button>
+    
+                </div>
+                <ul id="doggoList">
             
                 </ul>                   
             </div>
@@ -67,10 +84,10 @@
                     Bean
                 </h2>
                 <h3>Job Title</h4>
-                <button data-prof="marco">Get Marco's info</button>
+                <button class="boxButton doggoInfo" data-member="doggo">Learn More</button>
 
             </div>
-            <!-- <button class=" col-span-full m-col-start-2 m-col-end-4" data-prof="marco">Get Marco's info</button> -->
+            <!-- <button class=" col-span-full m-col-start-2 m-col-end-4" data-prof="marco">Learn More</button> -->
 
         </section>
         <h1>Working with Objects</h1>
