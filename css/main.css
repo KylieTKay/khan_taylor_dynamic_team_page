@@ -73,7 +73,11 @@ menu li { margin-right: 30px;}
 
 /* *Hero* */
 
-.heroText { grid-row: 1/1;}
+.heroText {
+    grid-row: 1/1;
+    /* align-self: center; */
+    margin: auto;
+    }
 
 .heroText h2 {
 font-size: 70px;
@@ -81,33 +85,85 @@ font-size: 70px;
 .heroText h3 {
 font-size: 30px;
 }
+
+.mobileHeroText {
+    display: none;
+}
 .mainHero { 
     height: 825px; 
     margin-top: -120px;
 }
 
 .mainHero#partner1Hero {
+    background: url("../images/taylor2.jpg") no-repeat;
+    background-size: cover;
+    grid-column: 1/8;
     margin-top: 0 !important;
     height: 612px !important;
     margin-left: -15px;
     border-radius: 0 50em 50em 0;
-    grid-row: 1/1;
+    grid-row: 1/-1;
+    transition: all 1s ease;
 }
 
 
 .mainHero#partner2Hero {
+    background: url("../images/millie.jpg") no-repeat;
+    background-size: cover;
+    grid-column: 6/12;
     margin-top: 0 !important;
     margin-right: -30px;
     width: 600px;
     height: 600px !important;
-    grid-row: 1/1;
+    grid-row: 1/-1;
     border-radius: 50em;
+    transition: all .5s ease;
 }
 
+/* .open {
+
+} */
+
+/* 
+.taylorInfo {
+    display: block;
+}
+  */
+ 
+#partner1Hero.open {
+    grid-column: 1/-1;
+/* 
+    display: grid;    
+    justify-self: stretch; */
+    /* min-width: 4fr; */
+    margin: 0 -15px!important;
+    border-radius: 0 !important;
+    height: 600px !important;
+    grid-row: 1/-1;
+}
+/* 
+.doggoInfo {
+    display: block;
+} */
+ 
+ 
+#partner2Hero.open {
+    /* display: grid;     */
+    /* justify-self: stretch; */
+    /* min-width: 4fr; */
+    grid-column: 1/-1;
+    margin: 0 -15px!important;
+    border-radius: 0 !important;
+    height: 600px !important;
+    grid-row: 1/-1;
+}
+
+
+/* 
 .heroOverlay {
     padding-top: 190px;
     padding-bottom: 310px;
-}
+} */
 
 .heroOverlay h1, .heroOverlay p { 
     text-align: center;
@@ -220,9 +276,33 @@ font-size: 30px;
     }
 /* hero */
 
+.mobileHeroText { 
+    display: grid;
+    margin: 50px 0;
+}
+
+.mobileHeroText h2, .mobileHeroText h3{ 
+    text-align: center;
+}
+.mobileHeroText h2 {
+font-size: 50px;
+}
+.mobileHeroText h3 {
+font-size: 20px;
+}
+
+.heroText {display: none;}
+
 .heroOverlay { padding: 250px 0;}
 
 .mainHero#partner1Hero {
+    height: 50vh !important;
+}
+
+
+.mainHero#partner2Hero {
+    justify-self: center;
+    width: 50vh !important;
     height: 50vh !important;
 }
 
@@ -232,9 +312,11 @@ font-size: 30px;
 #footerCon{
     padding: 30vh 0 0 0;
 }
+
 #subCon {
     margin-bottom:20vh;
 }
+
 #subCon form{
     display: grid;
     justify-content: center;
@@ -244,6 +326,7 @@ font-size: 30px;
     width: 75vw;
     grid-row: 1/1
 }
+
 #subCon form button {
     width: 20vw;
     grid-row: 1/1
