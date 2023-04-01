@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Grid Framwork Scaffold</title>
+    <title>Quatro: About the Team</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -12,40 +12,36 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h2 class="hidden">contact page</h2>
+    <h2 class="hidden">Team Page</h2>
     <div class="container">
     <!-- header -->
     <header>
         <section class="headerCon grid-con">
             <h2 class="hidden">"main header"</h2>
-            <a href="index.html" id="logo" class="boxIcon col-start-2 col-end-4 m-col-start-1 m-col-end-3">LOGO</a>
-            <button class="boxIcon col-start-4 col-end-9" id="hamburger">
+            <a href="index.html" id="logo"
+            class="boxIcon m-col-span-4"></a>
+            <button class="boxIcon" id="hamburger">
                 <i class="fa-solid fa-bars fa-xl"></i>
             </button>
-           <nav class="mainNav col-span-full
-            m-col-span-5 m-col-end-13" id="burger-con">
+           <nav class="mainNav m-col-span-4 m-col-end-13" id="burger-con">
                 <menu id="burger-menu">
-                    <li><a class="boxButton" href="contact.html">contact</a></li>
-                    <li><a class="boxButton" href="*">menu2</a></li>
-                    <li><a class="boxButton" href="*">menu3</a></li>
-                    <li><a class="boxButton" href="*">menu4</a></li>
-                    <li><a class="boxButton" href="*">menu5</a></li>
+                    <li><a class="boxButton" href="*">Shop</a></li>
+                    <li><a class="boxButton" href="contact.html">Contact</a></li>
+                    <li><a class="boxButton" href="*">About</a></li>
+                    <li><a class="boxButton" href="*">Help</a></li>
                 </menu>
             </nav>
         </section>
     </header>
     <main>
         <!-- Hero -->
+        <div class="Hero grid-con" id="mainHero">
+            <h2>Meet the Team</h2>
+        </div>
+        <!-- Meet the Team -->
         <section class="grid-con">
-            <h2 class="hidden">"Hero"</h2> 
-            <div class="mobileHeroText ">
-                <h3>Team Lead</h3>
-                <h2>Taylor 
-                    <br> Khan</h2>
-                <h3>Job Title</h4>
-                <button class="boxButton taylorInfo" data-member="taylor"><p>Learn More</p></button>
-                </div>
-            <div class="mainHero col-span-full" id="partner1Hero">
+        <h2 class="hidden">"Team Lead "</h2> 
+            <div class="Hero" id="partner1Hero">
 
             </div>
             <div class="heroOverlay m-col-start-9 m-col-end-12 heroText">
@@ -53,53 +49,48 @@
                 <h2>Taylor 
                     <br> Khan</h2>
                 <h3>Job Title</h4>
-                <button class="boxButton taylorInfo" data-member="taylor"><p>Learn More</p></button>               
-                <ul id="taylorList">
-                </ul>                   
+                <button class="boxButton taylorInfo" data-member="taylor"><p id="taylorButtonText">Learn More</p></button>               
+                <h4 id="taylorList">
+                </h4>                   
             </div>
-            <!-- <button class=" col-span-full m-col-start-10 m-col-end-12" data-member="taylor"><p>Learn More</p></button> -->
-
         </section>
         <section class="grid-con">
-            <h2 class="hidden">"Hero"</h2>
-            <div class="mainHero boxImgCon col-span-full" id="partner2Hero">
-                <div class="mobileHeroText">
-                    <h3>Support</h3>
-                    <h2>Millie-Ann
-                        <br>
-                        Bean
-                    </h2>
-                    <h3>Job Title</h4>
-                    <button class="boxButton doggoInfo" data-member="doggo">Learn More</button>
-    
-                </div>
-                <ul id="doggoList">
-            
-                </ul>                   
+            <h2 class="hidden">"Support"</h2>
+            <div class="Hero" id="partner2Hero">
             </div>
-            <div class="heroOverlay col-span-full m-col-start-2 m-col-end-5 heroText">
+            <div class="heroOverlay m-col-start-2 m-col-end-5 heroText">
                 <h3>Support</h3>
                 <h2>Millie-Ann
                     <br>
                     Bean
                 </h2>
-                <h3>Job Title</h4>
-                <button class="boxButton doggoInfo" data-member="doggo">Learn More</button>
-
+                <h3>Emotional Aid</h4>
+                <button class="boxButton doggoInfo" data-member="doggo"><p id="doggoButtonText">Learn More</p></button>
+                <h4 id="doggoList">
+            
+                </h4>                   
             </div>
-            <!-- <button class=" col-span-full m-col-start-2 m-col-end-4" data-prof="marco">Learn More</button> -->
-
-        </section>
-        <h1>Working with Objects</h1>
-
-        <button data-prof="trevor">Get Trevor's info</button>
-        <button data-prof="jarrod">Get Jarrod's info</button>
-
-
 
     </main>
 
     <script src="js/main.js"></script>
     </div>
+    
+<!-- footer -->
+<footer>
+    <section id="footerCon">
+        <h2 class="hidden">footer</h2>
+        <div class="grid-con" id="footerBanner">
+            <p class="m-col-start-5 m-col-end-11" id="copyrights">
+                Copyright &copy; 2023 Quatro&trade; All Rights Reserved
+            </p>
+            <div class="m-col-start-5 m-col-end-9" id="socials">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</footer>   
 </body>
 </html>
