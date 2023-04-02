@@ -19,16 +19,17 @@ let burgerCon = document.querySelector("#burger-con");
 
 let team = {
         taylor: {
-            name: "Taylor Khan",
-            headline: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus, quia, corporis alias ipsum praesentium maxime minus necessitatibus doloremque, repellendus iste optio. Nulla earum nisi alias reiciendis ipsam quos ab.",
-            avatar: "Taylor.jpg",
+            Roles: "Product Design | Web Design/Development | Content Management | Editing",
+            break: "____",
+            Description: "Taylor is a creative at heart, who focused her primary education in design and visual arts which developed a love for Visual Media and Communications. Now a Student of Interactive Media Design at Fanshawe College, Taylor is the Creative Director / Team Lead for Quatro's rebranding.",
         },
     
         doggo: {
-            name: "Millie-Ann Bean",
-            headline: "no one",
-            bio: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus, quia, corporis alias ipsum praesentium maxime minus necessitatibus doloremque, repellendus iste optio. Nulla earum nisi alias reiciendis ipsam quos ab.",
-            avatar: "blank-icon.jpg",
+            Roles: "A Very Good Girl | Emotional Aide",
+            break:"____",
+            Description: "This loveable Floof carried the team through thick and thin with her can-do attitude and irresistable charm. Whenever moral was low, she was there to help her team-mates recharge with cuddles and a nap.",
+            break2:"-",
+            whatIsShe: "Chorkie (Chihuahua/Yorkie)",
         }
     };        
 
