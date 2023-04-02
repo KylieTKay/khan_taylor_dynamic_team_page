@@ -19,8 +19,6 @@ Bio page introducing team members of the Quatro&trade; Rebrand uteletizing objec
 Bio information can be retrieved this on a click event:                 
 <button class="boxButton taylorInfo" data-member="taylor"><p id="taylorButtonText">Learn More</p></button>               
 and putting it into the given tag on the page.
-<h3 id="taylorList">
-</h3>
 
 <br>
 
@@ -36,7 +34,7 @@ taylor:
 <br>
 
 doggo: 
-    ![Millie-Ann Bean](images/Millie2.jpg)
+    ![Millie-Ann Bean](images/millie2.jpg)
     
     {Roles: "A Very Good Girl | Emotional Aide",
        
@@ -70,7 +68,5 @@ Taylor Khan
 
 ## License
 MIT
-
-<script src="js/main.js"></script>
 
 </div>
